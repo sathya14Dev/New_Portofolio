@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ovo&display=swap");
+
+/* motion untuk animasi */
+/* @plugin "tailwindcss-motion"; */
+
+/* dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* custom di tailwind */
+@theme {
+  --font-ovo: "Ovo", serif;
+  --color-button-light: #6366f1;
+  --color-button-dark: #161616;
+  --color-primary: #242424;
+  --color-secondary: #565656;
+  --color-secondary-dark: #D1D5DB;
+}
+
+/* apply */
+.link-navbar {
+  @apply font-medium text-gray-600 hover:text-gray-800 dark:text-white dark:opacity-75 dark:hover:opacity-100 dark:hover:text-white;
+}
+
+.link-navbar-mobile {
+  @apply block text-lg font-medium text-gray-700 dark:text-gray-300 py-3 px-4 rounded-xl hover:bg-red-50 dark:hover:bg-gray-700 hover:text-red-600 dark:hover:text-red-400 transition-all duration-200;
+}
+
+.social-mobile-icon {
+  @apply w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-red-500 hover:text-white dark:hover:bg-red-500 dark:hover:text-white transition-all duration-200;
+}
+
+.social-media-icon {
+  @apply bg-gray-700 text-white dark:bg-white dark:text-gray-800 py-2 px-3 rounded-full;
+}
+
+.icon-github {
+  @apply hover:bg-black dark:hover:bg-black dark:hover:text-white transition-all duration-300;
+}
+
+.icon-instagram {
+  @apply hover:bg-gradient-to-t hover:from-pink-500 hover:via-purple-500 hover:to-orange-500  dark:hover:text-white transition-all duration-300;
+}
+
+.icon-linkedin {
+  @apply hover:bg-[#0077b5] dark:hover:bg-[#0077b5] dark:hover:text-white transition-all duration-300;
+}
+
+.icon-facebook {
+  @apply hover:bg-blue-800 dark:hover:bg-blue-800 dark:hover:text-white transition-all duration-300;
+}
+
+.icon-whatsapp {
+  @apply hover:bg-green-500 dark:hover:bg-green-500 dark:hover:text-white transition-all duration-300;
+}
+
+.skill-list {
+  @apply flex items-center gap-2 p-4 bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-white hover:text-white rounded-md shadow-sm hover:-translate-y-2 transition-all duration-300;
+}
+
+.title-project-list {
+  @apply text-xl text-gray-900 dark:text-white font-semibold mb-2;
+}
+
+.description-project-list {
+  @apply text-gray-700 dark:text-secondary-dark;
+}
+
+.tech-stack {
+  @apply flex flex-wrap gap-2 mb-3;
+}
+
+.tech-tag {
+  @apply text-xs bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-full;
+}
+
+.badge-wip {
+  @apply absolute top-2 right-2 z-10 bg-yellow-500 text-black text-xs px-2 py-1 rounded-full font-semibold;
+}
+
+.project-list {
+  @apply bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md hover:scale-[1.02] transition-all duration-300;
+}
+
+.image-project-list {
+  @apply w-full h-56 object-cover rounded-md mb-4 transition duration-500;
+}
+
+.project-list:hover .image-project-list {
+  @apply scale-105;
+}
+
+.isi-form {
+  @apply w-full p-3 mb-4 text-black dark:text-white border border-gray-400 rounded-lg focus:outline-none focus:ring-1 focus:ring-indigo-500 dark:focus:ring-sky-400 bg-white dark:bg-indigo-950 placeholder:text-gray-500 dark:placeholder:text-white;
+}

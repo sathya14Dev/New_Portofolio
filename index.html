@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="./src/output.css">
+  <!-- FontAwesome logo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- DevIcon logo -->
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="font-ovo bg-gray-50 dark:bg-gray-900 overflow-x-hidden">
+  <header>
+    <nav class="fixed bg-white dark:bg-gray-800 shadow-sm md:rounded-bl-2xl md:rounded-br-2xl w-full z-50">
+      <div class="container mx-auto flex items-center justify-between p-5">
+        <div class="text-2xl font-bold text-gray-800 dark:text-white">
+          <a href="#">Sathya Bintang <span class="text-red-500 font-bold">.</span></a>
+        </div>
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="#home" class="link-navbar">Home</a></li>
+          <li><a href="#about" class="link-navbar">About</a></li>
+          <li><a href="#skill" class="link-navbar">Skill</a></li>
+          <li><a href="#projects" class="link-navbar">Projects</a></li>
+        </ul>
+
+        <!-- desktop contact and dark icon -->
+        <div class="contact and dark-icon hidden md:flex items-center gap-6 cursor-pointer">
+          <button id="theme-toggle" class="text-xl text-gray-800 dark:text-white">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+          </button>
+          <a href="#contact"
+            class="py-2 group px-8 border border-purple-700 dark:border-white dark:text-white rounded-full">Contact<i
+              class="fa-solid fa-arrow-down ml-3 transform transition-transform duration-300 group-hover:translate-y-1"></i></a>
+        </div>
+
+        <!-- mobile dark icon & hamburger -->
+        <div class="menu-icon md:hidden flex items-center gap-6">
+          <button id="theme-toggle" class="text-xl text-gray-800 dark:text-white">
+            <i id="theme-icon" class="fa-solid fa-moon"></i>
+          </button>
+          <button id="hamburger-btn" class="cursor-pointer">
+            <i id="hamburger-icon" class="fa-solid fa-bars text-2xl text-gray-800 dark:text-white"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile menu (atas ke bawah dari navbar) -->
+    <div id="mobile-menu"
+      class="fixed top-[71px] left-0 right-0 bg-white dark:bg-gray-800 shadow-lg rounded-b-2xl z-40 max-h-0 overflow-hidden md:hidden">
+
+      <div class="container mx-auto px-5 py-0">
+        <!-- Menu items -->
+        <ul class="flex flex-col gap-2 pb-4">
+          <li><a href="#home" class="link-navbar-mobile" data-mobile-nav>Home</a></li>
+          <li><a href="#about" class="link-navbar-mobile" data-mobile-nav>About</a></li>
+          <li><a href="#skill" class="link-navbar-mobile" data-mobile-nav>Skill</a></li>
+          <li><a href="#projects" class="link-navbar-mobile" data-mobile-nav>Projects</a></li>
+          <li><a href="#contact" class="link-navbar-mobile" data-mobile-nav>Contact</a></li>
+        </ul>
+
+        <!-- WhatsApp -->
+        <div class="border-t border-gray-200 dark:border-gray-700 pt-4 pb-6">
+          <a href="https://wa.me/6281246949919" target="_blank" rel="noopener noreferrer"
+            class="w-full flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 active:scale-95 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 shadow-md hover:shadow-lg">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Hubungi via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="container mx-auto pt-36 pb-5 px-5">
+
+        <div class="isi flex flex-col items-center justify-center">
+
+          <div class="image flex flex-col items-center">
+            <img src="img/Salinan 16 SATHYA XII RPL 1.jpg" alt="levi"
+              class="w-32 h-32 rounded-full object-cover bg-gray-700 dark:bg-gray-500" data-aos="fade-in"
+              data-aos-delay="200">
+            <h1 class="mt-2 text-primary text-xl md:text-2xl dark:text-white" data-aos="slide-down">Halo, saya Sathya
+              Bintang</h1>
+          </div>
+
+          <div class="text-center mt-4" data-aos="zoom-in">
+            <h1 class="text-4xl sm:text-6xl font-semibold dark:text-white">Web <span
+                class="bg-linear-to-r bg-clip-text text-transparent from-red-500 to-purple-500">Developer</span></h1>
+            <p class="mt-3 text-secondary text-lg dark:text-white">Pemula web developer asal Denpasar, Bali</p>
+          </div>
+
+          <div
+            class="buttons w-full flex flex-col md:flex md:flex-row md:w-[440px] justify-center items-center mt-5 gap-5 cursor-pointer">
+            <a href="#contact" data-aos="fade-right"
+              class="py-3 group w-full flex gap-2 justify-center items-center rounded-xl bg-button-light dark:bg-button-dark border border-blue-800 hover:scale-[1.01] hover:border hover:border-s-cyan-900-400 dark:border-button-light dark:hover:bg-button-dark dark:hover:border dark:hover:border-indigo-600 hover:shadow-indigo-400 dark:hover:shadow-gray-900 hover:shadow-sm text-white transition-all duration-300">Hubungi
+              saya<i
+                class="fa-solid fa-arrow-right text-xs mt-1 transform transition-transform duration-300 group-hover:translate-x-1"></i></a>
+            <a href="/assets/CV Sathya Bintang.pdf" data-aos="fade-left"
+              class="py-3 group gap-2 w-full flex justify-center items-center rounded-xl bg-button-dark text-white dark:bg-white dark:text-gray-900 border border-gray-400">Download
+              CV<i
+                class="fa-solid fa-download mt-1 transform transition-transform duration-300 group-hover:-translate-y-1"></i></a>
+          </div>
+
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 40 1440 320" class="hidden md:block">
+        <path fill="#273036" class="dark:fill-sky-950" fill-opacity="1"
+          d="M0,96L60,122.7C120,149,240,203,360,208C480,213,600,171,720,149.3C840,128,960,128,1080,133.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+        </path>
+      </svg>
+
+    </section>
+
+    <section id="about" class="md:scroll-mt-20">
+      <div class="container mx-auto flex flex-col py-16 px-5">
+
+        <div class="title text-center mb-6" data-aos="fade-up">
+          <p class="text-secondary dark:text-secondary-dark text-lg">Perkenalan</p>
+          <h1 class="text-primary dark:text-white text-4xl mt-2 relative inline-block">Tentang Saya
+            <span
+              class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-red-600 rounded-full"></span>
+          </h1>
+          <p class="text-secondary dark:text-secondary-dark mt-6">Lulusan Jurusan RPL</p>
+        </div>
+
+        <div class="isi sm:flex sm:justify-center sm:gap-10 lg:gap-28 mt-6">
+
+          <div class="image relative mt-2 sm:w-1/3" data-aos="fade-up">
+            <div class="bg-gray-800 dark:bg-gray-200 flex justify-center overflow-hidden relative rounded-lg">
+              <img src="./img/Salinan 16 SATHYA XII RPL 1.jpg" alt="Gambar Sathya"
+                class="h-[490px] w-full transition-transform duration-300 hover:scale-110">
+            </div>
+          </div>
+
+          <div class="isi flex flex-col sm:w-2/3" data-aos="fade-up">
+            <h1 class="text-lg text-justify text-gray-600 dark:text-gray-100 mt-2">Saya adalah siswa SMK Negeri 1
+              Denpasar jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki minat pada pengembangan
+              aplikasi web. Saya mempelajari HTML, CSS, JavaScript, serta Laravel dan MySQL untuk membangun website
+              sederhana. Saat
+              ini saya juga mempelajari Vue.js untuk memperluas pemahaman di sisi frontend. Saya terus
+              mengembangkan kemampuan
+              teknis dan pemahaman logika pemrograman untuk menjadi Web Developer yang siap berkontribusi di dunia
+              industri.</h1>
+            <hr class="my-4 border border-gray-300">
+
+            <div class="social-media flex flex-col">
+              <h1 class="text-gray-800 dark:text-secondary-dark">Sosial-media</h1>
+
+              <div class="social flex gap-3 mt-3">
+
+                <div class="social-media-icon icon-github">
+                  <a href="https://github.com/sathya14Dev" target="_blank"><i
+                      class="fa-brands fa-github text-xl"></i></a>
+                </div>
+
+                <div class="social-media-icon icon-instagram">
+                  <a href="https://www.instagram.com/sathya_bintang/" target="_blank"><i
+                      class="fa-brands fa-instagram text-xl"></i></a>
+                </div>
+
+                <div class="social-media-icon icon-linkedin">
+                  <a href="https://www.linkedin.com/in/sathya-bintang-0a126532a/" target="_blank"><i
+                      class="fa-brands fa-linkedin text-xl"></i></a>
+                </div>
+
+                <div class="social-media-icon icon-facebook" target="_blank">
+                  <a href="https://www.facebook.com/profile.php?id=61577853102702"><i
+                      class="fa-brands fa-facebook text-xl"></i></a>
+                </div>
+
+                <div class="social-media-icon icon-whatsapp" target="_blank">
+                  <a href="https://wa.me/6281246949919"><i class="fa-brands fa-whatsapp text-xl"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="md:scroll-mt-20">
+      <div class="container mx-auto flex flex-col items-center justify-center py-16 px-5">
+
+        <div class="title text-center mb-6" data-aos="fade-up">
+          <p class="text-secondary dark:text-secondary-dark text-lg">Yang saya bisa</p>
+          <h1 class="text-primary dark:text-white mt-2 text-4xl relative inline-block">Keahlian Saya
+            <span
+              class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-red-600 rounded-full"></span>
+          </h1>
+          <p class="text-secondary dark:text-secondary-dark mt-6">Teknologi yang saya pelajari dan gunakan dalam
+            pengembangan web</p>
+        </div>
+
+        <div class="skils w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 " data-aos="zoom-in-up">
+
+          <div class="skill-list hover:bg-linear-to-r from-orange-600 to-orange-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""
+              class="w-14">
+            <div>
+              <h1 class="font-bold">Html</h1>
+            </div>
+          </div>
+
+          <div class="skill-list hover:bg-linear-to-r from-blue-700 to-indigo-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""
+              class="w-14">
+            <div>
+              <h1 class="font-bold">CSS</h1>
+            </div>
+          </div>
+
+          <div class="skill-list hover:bg-linear-to-r from-sky-600 to-sky-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+              alt="" class="w-14">
+            <div>
+              <h1 class="font-bold">Tailwind CSS</h1>
+            </div>
+          </div>
+
+          <div class="skill-list hover:bg-linear-to-r from-yellow-600 to-yellow-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+              alt="" class="w-14">
+            <div>
+              <h1 class="font-bold">JavaScript</h1>
+            </div>
+          </div>
+
+          <div class="skill-list hover:bg-gradient-to-r from-purple-700 to-purple-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt=""
+              class="w-14">
+            <div>
+              <h1 class="font-bold">PHP</h1>
+            </div>
+          </div>
+
+          <div class="skill-list hover:bg-gradient-to-r from-red-600 to-pink-300">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt=""
+              class="w-14">
+            <div>
+              <h1 class="font-bold">Laravel</h1>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="md:scroll-mt-20">
+      <div class="container mx-auto flex flex-col items-center justify-center py-16 px-5">
+        <div class="text text-center mb-6" data-aos="fade-up">
+          <p class="text-secondary dark:text-secondary-dark text-lg">Portfolio saya</p>
+          <h1 class="text-primary dark:text-white mt-2 text-4xl relative inline-block">
+            Proyek-proyek terbaru saya
+            <span
+              class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-red-600 rounded-full"></span>
+          </h1>
+          <p class="text-secondary dark:text-secondary-dark mt-6">Beberapa proyek yang pernah saya buat </p>
+        </div>
+
+        <div class="projects w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10" data-aos="zoom-in-up">
+
+          <div class="project-list group">
+            <img src="./img/Klinik.png" alt="Website Klinik" class="image-project-list">
+            <div class="tech-stack">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Tailwind</span>
+            </div>
+            <h2 class="title-project-list">Klinik</h2>
+            <p class="description-project-list">Website sederhana untuk klinik kesehatan</p>
+          </div>
+
+          <div class="project-list group">
+            <img src="./img/TrinsaCollection.png" alt="Website Trisna Collection" class="image-project-list">
+            <div class="tech-stack">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Tailwind</span>
+            </div>
+            <h2 class="title-project-list">Trisna Collection</h2>
+            <p class="description-project-list">Website sederhana untuk toko pakaian</p>
+          </div>
+
+          <div class="project-list group relative">
+            <span class="badge-wip">Progress</span>
+            <img src="./img/Perpus.png" alt="Website Slebry" class="image-project-list">
+            <div class="tech-stack">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">Tailwind</span>
+            </div>
+            <h2 class="title-project-list">Slebry</h2>
+            <p class="description-project-list">Website perpustakaan digital sederhana</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="md:scroll-mt-20 ">
+      <div class="container mx-auto flex flex-col items-center justify-center py-16 px-5">
+
+        <div class="title text-center mb-6" data-aos="fade-up">
+          <p class="text-secondary dark:text-secondary-dark text-lg">Hubungi saya</p>
+          <h1 class="text-primary dark:text-white text-4xl mt-2 relative inline-block">Mari Terhubung
+            <span
+              class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-red-600 rounded-full"></span>
+          </h1>
+          <p class="text-secondary dark:text-secondary-dark mt-6 text-sm">Jika ada pertanyaan, komentar, atau masukan,
+            silakan isi form di bawah ini</p>
+        </div>
+
+        <form action="https://formspree.io/f/xjgjeaaz" method="post" class="flex flex-col items-center justify-center">
+          <div class="ipt flex gap-9">
+            <input type="text" name="name" id="name" placeholder="Masukkan nama Anda" class="isi-form"
+              data-aos="fade-right">
+            <input type="email" name="email" id="email" placeholder="Masukkan email Anda" class="isi-form"
+              data-aos="fade-left">
+          </div>
+
+          <textarea name="message" id="message" rows="4" placeholder="Masukkan pesan Anda" class="isi-form"
+            data-aos="zoom-in"></textarea>
+          <button type="submit" data-aos="flip-down"
+            class="py-3 px-5 flex gap-2 justify-center items-center bg-green-700 border border-gray-700 dark:bg-button-dark dark:border-button-light text-white cursor-pointer rounded-xl hover:scale-[1.02] transition-all duration-300 group hover:shadow-green-400 dark:hover:shadow-gray-900 hover:shadow-sm">
+            Kirim Sekarang<i
+              class="fa-solid fa-arrow-right text-xs mt-1 transform transition-transform duration-300 group-hover:translate-x-1"></i></button>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn"
+      class="hidden fixed bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white w-12 h-12 rounded-full shadow-lg transition-all duration-300 z-50">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+  </main>
+
+  <footer>
+    <div class="bg-gray-800 dark:bg-gray-900 text-white py-8 mt-3">
+      <div class="container mx-auto text-center px-5">
+        <div class="flex justify-center gap-6 mb-4">
+          <a href="https://github.com/sathya14Dev" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa-brands fa-github text-2xl"></i>
+          </a>
+          <a href="https://www.instagram.com/sathya_bintang/" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa-brands fa-instagram text-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sathya-bintang-0a126532a/" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa-brands fa-linkedin text-2xl"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61577853102702" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa-brands fa-facebook text-2xl"></i>
+          </a>
+          <a href="https://wa.me/6281246949919" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors duration-300">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+          </a>
+        </div>
+        <p class="text-gray-400 text-sm">&copy; 2026 Sathya Bintang</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+
+</html>
