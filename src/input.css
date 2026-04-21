@@ -23,7 +23,7 @@
 }
 
 .link-navbar-mobile {
-  @apply block text-lg font-medium text-gray-700 dark:text-gray-300 py-3 px-4 rounded-xl hover:bg-red-50 dark:hover:bg-gray-700 hover:text-red-600 dark:hover:text-red-400 transition-all duration-200;
+  @apply block font-medium text-gray-700 dark:text-gray-300 py-3 px-4 rounded-xl hover:bg-red-50 dark:hover:bg-gray-700 hover:text-red-600 dark:hover:text-red-400 transition-all duration-200;
 }
 
 .social-mobile-icon {
